@@ -1,0 +1,14 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+    background: rgb(104,152,210);
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-default {
+    .navbar-brand, .navbar-text, .navbar-nav > li > a {
+        color: white;
+    }
+}
