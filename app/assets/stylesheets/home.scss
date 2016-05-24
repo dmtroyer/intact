@@ -1,11 +1,9 @@
 .table {
-
     .fa {
         display: block;
     }
 
     tbody tr {
-
         td:nth-of-type(1) {
             font-weight: 800;
         }
@@ -17,5 +15,15 @@
             }
         }
     }
+}
 
+.login-container,
+.sign-up-container {
+    margin: auto;
+    width: 500px;
+}
+
+.sign-up {
+    display: inline-block;
+    padding-top: 7px;
 }

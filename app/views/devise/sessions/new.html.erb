@@ -1,3 +1,4 @@
+<div class="login-container">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form-horizontal' }) do |f| %>
   <div class="form-group">
     <%= f.label :username, 'Username:', class: 'col-sm-2 control-label' %>
@@ -14,9 +15,14 @@
   </div>
 
   <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <%= link_to 'Sign Up', new_user_registration_path %>
-      <%= f.submit 'Sign In', class: 'btn btn-primary' %>
+    <div class="col-sm-offset-2">
+      <div class="col-sm-5 sign-up">
+        <%= link_to 'Sign Up', new_user_registration_path %>
+      </div>
+      <div class="col-sm-5 pull-right">
+        <%= f.submit 'Sign In', class: 'btn btn-primary pull-right' %>
+      </div>
     </div>
   </div>
 <% end %>
+</div>
