@@ -13,6 +13,10 @@ group :development do
   gem 'spring'
 end
 
+group :devlopment, :test do
+  gem 'rspec-rails', '~> 3.4'
+end
+
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
 end
