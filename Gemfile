@@ -8,6 +8,7 @@ gem 'jquery-rails', '~> 4.1'
 gem 'pg', '~> 0.15'
 gem 'puma', '~> 3.4'
 gem 'sass-rails', '>= 3.2'
+gem 'turbolinks', '~> 2.5'
 gem 'uglifier', '~> 3.0'
 
 group :development do
