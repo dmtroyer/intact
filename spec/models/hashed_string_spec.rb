@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe HashedString, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "validation" do
+    it "requires an original string" do
+      string = HashedString.new
+      expect(string).to_not be_valid
+    end
+  end
 end
