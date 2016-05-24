@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 2.5'
 gem 'uglifier', '~> 3.0'
 
 group :development do
+  gem 'pry-rails'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
