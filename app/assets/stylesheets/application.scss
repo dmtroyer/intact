@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.content {
+    margin: 50px auto 0 auto;
+    width: 90%;
+}
+
 .navbar {
     background: rgb(104,152,210);
     border: none;
