@@ -13,9 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require home
-
-jQuery("form#new_hashed_string").closest('form').on('submit', function(e) {
-  alert( "Handler for .click() called." );
-});
-
-console.log("BAR");
