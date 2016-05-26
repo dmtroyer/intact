@@ -7,8 +7,7 @@ module Hashable
 
   private
     def client
-      @client ||= IronWorker::Client.new(token: ENV['IRON_TOKEN'],
-                                         project_id: ENV['IRON_PROJECT_ID'])
+      @client ||= IronWorker::Client.new
     end
 
     def generate_hashed_value
@@ -27,7 +26,7 @@ module Hashable
     end
 
     def send_to_worker(string)
-      client.tasks.create(ENV['IRON_CODE_NAME'], string).id
+      client.tasks.create(ENV['IRON_WORKER_CODE_NAME'], string).id
     end
 
     def wait_for_worker(task_id, sleep=1)
