@@ -2,7 +2,7 @@ require 'dotenv/tasks'
 require 'zip'
 
 namespace :iron_worker do
-  desc "Upload worker code to Iron Worker"
+  desc "Upload worker code to IronWorker. Requires IronWorker CLI."
   task :upload => :dotenv do
     folder = 'vendor/bin'
     exe = 'StringHasher.exe'
