@@ -12,9 +12,10 @@ class HashedStringsController < ApplicationController
     hashed_string = HashedString.new(hashed_string_params)
     hashed_string.user = current_user
 
-    if hashed_string.save
-      redirect_to root_path
+    if !hashed_string.save
+      flash[:alert] = hashed_string.errors.messages.flatten.join(' ')
     end
+    redirect_to root_path
   end
 
   # DELETE /hashed_strings/:id

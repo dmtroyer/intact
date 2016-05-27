@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          authentication_keys: { username: true, email: false }
 
   validates :username, presence: true, uniqueness: { case_sensitive: false }
+  validates_confirmation_of :password
 end

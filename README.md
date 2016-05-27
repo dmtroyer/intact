@@ -17,7 +17,6 @@ This is a solution to the programming exercise proposed by Michael Freytag of In
 # Nice to haves that I didn't get to
 
 * AJAX calls for processing and deleting of strings so that the page doesn't have to reload
-* Alerts to feedback user of any errors with sign in, sign up, or string processing by IronWorker
 
 # Author
 

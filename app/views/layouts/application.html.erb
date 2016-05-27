@@ -11,6 +11,14 @@
 <%= render 'layouts/header' %>
 
 <div class="content">
+    <% flash.each do |name, msg| %>
+        <% if name == 'alert' || name == 'error' %>
+        <div class="alert alert-danger" role="alert">
+            <strong>ERROR:</strong>
+            <%= msg %>
+        </div>
+        <% end -%>
+    <% end -%>
     <%= yield %>
 </div>
 
