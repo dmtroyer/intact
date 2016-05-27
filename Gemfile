@@ -20,7 +20,10 @@ group :development do
 end
 
 group :development, :test do
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'factory_girl_rails', '~> 4.7'
   gem 'rspec-rails', '~> 3.4'
+  gem 'webmock', '~> 2.0', '>= 2.0.3'
 end
 
 group :production do
