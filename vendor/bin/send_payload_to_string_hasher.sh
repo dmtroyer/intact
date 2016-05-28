@@ -6,4 +6,4 @@
 # we have IronWorker execute this script. The script reads the payload file
 # and passes those contents that as an argument to StringHasher.exe
 
-mono StringHasher.exe `cat $PAYLOAD_FILE`
+mono StringHasher.exe "`cat $PAYLOAD_FILE`"
